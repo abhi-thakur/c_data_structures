@@ -3,12 +3,7 @@
 
 #include <stdlib.h>
 
-typedef struct {
-    size_t  len;
-    size_t  cap;
-    size_t  elem_size;
-    void**  data;
-} array_list;
+typedef struct list array_list;
 
 array_list*     arr_lst_new(size_t size);
 void            arr_lst_des(array_list* lst);

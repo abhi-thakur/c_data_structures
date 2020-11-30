@@ -4,6 +4,13 @@
 
 #define INITIAL_CAP 10
 
+struct list {
+    size_t  len;
+    size_t  cap;
+    size_t  elem_size;
+    void**  data;
+};
+
 // non-public method
 void __ensure_cap(array_list* lst) {
     size_t len = lst->len;
